@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class person
+class Person
 {
     private:
     string first_name;
