@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <person.h> 
+#include"lib/person.h" //Must add the folder the header file, the compiler will find it this way
 
 using namespace std;
 
