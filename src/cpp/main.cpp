@@ -4,7 +4,11 @@
 
 using namespace std;
 
+//Initialize static member function
+int Person::count = 0;
+
 int main (void)
 {
-    
+    Person Ale, Pedro;
+    cout<<"Objects created: "<<Person::objtotal()<<endl;
 }

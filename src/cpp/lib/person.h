@@ -15,6 +15,11 @@ class Person
     static int count; 
     
     public:
+    //constructor (must not have any input and no void )
+    Person()
+    {
+        count++;
+    }
     //set all the atributes
     void setdata(string fname, string lname, string g, int a, float h)
     {
@@ -32,5 +37,10 @@ class Person
     void talk()
     {
         
+    }
+    //Static member function
+    static int objtotal(void)
+    {
+        return count;
     }
 };
