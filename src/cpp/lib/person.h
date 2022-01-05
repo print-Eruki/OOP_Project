@@ -11,6 +11,8 @@ class Person
     string gender;
     int age;
     float height;
+    //This static member will count how many objects are created of this class.
+    static int count; 
     
     public:
     //set all the atributes
@@ -25,15 +27,10 @@ class Person
     //Get all the atributes (output them out)
     void getdata()
     {
-        cout<<"First name: "<<first_name<<endl;
-        cout<<"Last name: "<<last_name<<endl;
-        cout<<"Gender: "<<gender<<endl;
-        cout<<"Age: "<<age<<endl;
-        cout<<"Height: "<<height<<"\n\n";
+        
     }
     void talk()
     {
-        cout<<"Hi my name is "<<first_name<<" "<<last_name<<" I'm a "<<gender<<" and "<<age;
-        cout<<" years old with a height of "<<height;
+        
     }
 };

@@ -6,7 +6,5 @@ using namespace std;
 
 int main (void)
 {
-    Person Ale;
-    Ale.setdata("Ale", "Pagan", "Male", 20, 177.8);
-    Ale.getdata();
+    
 }
