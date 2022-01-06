@@ -15,7 +15,7 @@ class Person
     static int count; 
     
     public:
-    //constructor (must not have any input and no void )
+    //constructor (The constructor will initialize every time an object is created)
     Person()
     {
         count++;
@@ -32,7 +32,12 @@ class Person
     //Get all the atributes (output them out)
     void getdata()
     {
-        
+        cout<<first_name<<endl;
+        cout<<last_name<<endl;
+        cout<<gender<<endl;
+        cout<<age<<endl;
+        cout<<height<<endl;
+
     }
     void talk()
     {
