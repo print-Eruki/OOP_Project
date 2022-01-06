@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string> 
-#include"lib/person.h"
+#include"person.h"
 
 class Worker : public Person  //inherited all the members and methods from the Person class
 {
@@ -9,8 +9,9 @@ class Worker : public Person  //inherited all the members and methods from the P
     float weekly_hours;
 
     public:
-    void setdata(float s, float weekhours)
+    void setdata(string fname, string lname, string g, int a, float h, float s, float weekhours)
     {
+        
         salary = s;
         weekly_hours = weekhours; 
     } 
