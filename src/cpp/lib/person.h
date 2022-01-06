@@ -5,7 +5,7 @@ using namespace std;
 
 class Person
 {
-    private:
+    protected:
     string first_name;
     string last_name;
     string gender;
@@ -21,22 +21,14 @@ class Person
         count++;
     }
     //set all the atributes
-    void setdata(string fname, string lname, string g, int a, float h)
+    void setdata()
     {
-        first_name = fname;
-        last_name = lname;
-        gender = g;
-        age = a;
-        height = h;
+        
     }
     //Get all the atributes (output them out)
     void getdata()
     {
-        cout<<first_name<<endl;
-        cout<<last_name<<endl;
-        cout<<gender<<endl;
-        cout<<age<<endl;
-        cout<<height<<endl;
+        
 
     }
     void talk()
