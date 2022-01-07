@@ -20,11 +20,11 @@ int main (void)
     Ale.setdata("Ale","Pagan", "Male",20,177.8, 15.30,35,"DLA Piper");
     Michael.setdata("Michael","Gonzales", "Male",22,177.8, 7.25,40);
     Jorge.setdata("Jorge","Perez","Male", 20, 177.8,12, 60,"Surgeon");
-    Roberto.setdata("Roberto","Santana","Male", 27, 180, 22.2,54,"Software","Google",true,false);
+    Roberto.setdata("Roberto","Santana","Male", 27, 180, 22.2,54,"Software","Google",true,true);
 
     cout<<"Objects created: "<<Person::objtotal()<<endl;
     Ale.talk();
     Michael.talk();
     Jorge.talk();
-    Roberto.displaydata();
+    Roberto.talk();
 }

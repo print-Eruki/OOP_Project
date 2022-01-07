@@ -36,6 +36,15 @@ class Engineer : public Worker
     }
     void talk()
     {
-        
+        cout<<"Hello! I am "<<first_name<<" "<<last_name<<", I am a "<<type<<" engineer that works "<<weekly_hours
+        <<" a week at "<<company<<" and I have a salary of "<<salary<<"."<<endl;
+        if(masters == true)
+        {
+            cout<<"I have a masters degree! ";
+        }
+        if(doctorate ==true)
+        {
+            cout<<"I have a doctorate degree!";
+        }
     }
-}
+};
