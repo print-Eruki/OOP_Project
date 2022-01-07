@@ -34,7 +34,7 @@ class Person
     }
     virtual void talk()
     {
-        
+        cout<<"Hello! I am "<<first_name<<" "<<last_name<<". I am a "<<gender<<" and my age is "<<age<<" years old.";
     }
     //Static member function
     static int objtotal(void)

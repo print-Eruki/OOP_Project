@@ -40,11 +40,11 @@ class Engineer : public Worker
         <<" a week at "<<company<<" and I have a salary of "<<salary<<"."<<endl;
         if(masters == true)
         {
-            cout<<"I have a masters degree! ";
+            cout<<"I have a masters degree! "<<endl;
         }
         if(doctorate ==true)
         {
-            cout<<"I have a doctorate degree!";
+            cout<<"I have a doctorate degree!"<<endl;
         }
     }
 };
