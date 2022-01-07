@@ -28,10 +28,9 @@ class Worker : public Person  //inherited all the members and methods from the P
         cout<<height<<endl;
         cout<<salary<<endl;
         cout<<weekly_hours<<endl;
-
     }
     virtual void talk(){
         cout<<"Hello! I am "<<first_name<<" "<<last_name<<", I am a worker that works "
-        <<weekly_hours<<" hours a week and I have a salary of "<<salary<<endl;
+        <<weekly_hours<<" hours a week and I have a salary of "<<salary<<"."<<endl;
     }
 };

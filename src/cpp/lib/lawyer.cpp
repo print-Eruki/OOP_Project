@@ -1,7 +1,5 @@
 #include <iostream> 
 #include <string>
-#include"worker.cpp"
-
 using namespace std;
 
 class Lawyer : public Worker
@@ -28,6 +26,6 @@ class Lawyer : public Worker
     void talk()
     {
         cout<<"Hello! I am "<<first_name<<" "<<last_name<<", I am lawyer that works "<<weekly_hours
-        <<" a week at "<<law_firm<<" and I have a salary of "<<salary<<endl;
+        <<" a week at "<<law_firm<<" and I have a salary of "<<salary<<"."<<endl;
     }
 };
