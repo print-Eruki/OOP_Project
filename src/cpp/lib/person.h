@@ -5,6 +5,7 @@ using namespace std;
 
 class Person
 {
+    //The access specifier is protected so that the inherited classes can access these members
     protected:
     string first_name;
     string last_name;
@@ -21,17 +22,17 @@ class Person
         count++;
     }
     //set all the atributes
-    void setdata()
+    virtual void setdata()
     {
         
     }
     //Get all the atributes (output them out)
-    void getdata()
+    virtual void displaydata()
     {
         
 
     }
-    void talk()
+    virtual void talk()
     {
         
     }
