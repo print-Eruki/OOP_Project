@@ -12,7 +12,7 @@ class Engineer : public Worker
     bool doctorate;
 
     public:
-    void setdata(string fname, string lname, string g, int a, float h, float s, float weekhours, string t,
+    void setdata(string fname, string lname, string g, int a, float h, float w, float s, float weekhours, string t,
     string c, bool m, bool d)
     {
         first_name = fname;

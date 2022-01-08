@@ -8,7 +8,7 @@ class Lawyer : public Worker
     string law_firm;
 
     public:
-    void setdata(string fname, string lname, string g, int a, float h, float s, float weekhours, string lfirm)
+    void setdata(string fname, string lname, string g, int a, float h, float w, float s, float weekhours, string lfirm)
     {
         first_name = fname;
         last_name = lname;

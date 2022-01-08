@@ -9,7 +9,7 @@ class Worker : public Person  //inherited all the members and methods from the P
     float weekly_hours;
 
     public:
-    virtual void setdata(string fname, string lname, string g, int a, float h, float s, float weekhours)
+    virtual void setdata(string fname, string lname, string g, int a, float h, float w, float s, float weekhours)
     {
         first_name = fname;
         last_name = lname;

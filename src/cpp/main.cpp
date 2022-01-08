@@ -19,11 +19,11 @@ int main (void)
     Engineer Roberto;
     Student Isabela;
 
-    Ale.setdata("Ale","Pagan", "Male",20,177.8, 15.30,35,"DLA Piper");
-    Michael.setdata("Michael","Gonzales", "Male",22,177.8, 7.25,40);
-    Jorge.setdata("Jorge","Perez","Male", 20, 177.8,12, 60,"Surgeon");
-    Roberto.setdata("Roberto","Santana","Male", 27, 180, 22.2,54,"Software","Google",true,true);
-    Isabela.setdata("Isabela","Velez","Female", 18, 150.4,"UPRM","Electrical Engineering");
+    Ale.setdata("Ale","Pagan", "Male",20,177.8, 180, 15.30,35,"DLA Piper");
+    Michael.setdata("Michael","Gonzales", "Male",22,177.8, 110, 7.25,40);
+    Jorge.setdata("Jorge","Perez","Male", 20, 177.8, 160, 12, 60,"Surgeon");
+    Roberto.setdata("Roberto","Santana","Male", 27, 180, 140, 22.2,54,"Software","Google",true,true);
+    Isabela.setdata("Isabela","Velez","Female", 18, 150.4, 111, "UPRM","Electrical Engineering");
 
     cout<<"Objects created: "<<Person::objtotal()<<endl;
     Ale.talk();

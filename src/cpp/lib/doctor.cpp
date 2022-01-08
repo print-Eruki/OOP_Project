@@ -8,7 +8,7 @@ class Doctor : public Worker
     string type;
 
     public:
-    void setdata(string fname, string lname, string g, int a, float h, float s, float weekhours, string t)
+    void setdata(string fname, string lname, string g, int a, float h, float w, float s, float weekhours, string t)
     {
         first_name = fname;
         last_name = lname;

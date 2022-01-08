@@ -10,7 +10,7 @@ class Student : public Person
     string major;
 
     public:
-    void setdata(string fname, string lname, string g, int a, float h, string i, string m)
+    void setdata(string fname, string lname, string g, int a, float h, float w, string i, string m)
     {
         first_name = fname;
         last_name = lname;

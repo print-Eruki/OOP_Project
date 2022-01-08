@@ -12,6 +12,7 @@ class Person
     string gender;
     int age;
     float height;
+    float weight;
     //This static member will count how many objects are created of this class.
     static int count; 
     
