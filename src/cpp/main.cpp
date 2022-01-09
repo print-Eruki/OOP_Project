@@ -10,6 +10,12 @@ using namespace std;
 
 //Initialize static member function
 int Person::count = 0;
+int Worker::count = 0;
+int Doctor::count = 0;
+int Engineer::count = 0;
+int Lawyer::count = 0;
+int Student::count =0;
+
 
 int main (void)
 {
@@ -26,6 +32,11 @@ int main (void)
     Isabela.setdata("Isabela","Velez","Female", 18, 150.4, 111, "UPRM","Electrical Engineering");
 
     cout<<"Objects created: "<<Person::objtotal()<<endl;
+    cout<<"Workers created: "<<Worker::worktotal()<<endl;
+    cout<<"Lawyers created: "<<Lawyer::lawtotal()<<endl;
+    cout<<"Engineers created: "<<Engineer::engtotal()<<endl;
+    cout<<"Doctors created: "<<Doctor::doctotal()<<endl;
+    cout<<"Students created: "<<Student::studtotal()<<endl;
     Ale.talk();
     Michael.talk();
     Jorge.talk();

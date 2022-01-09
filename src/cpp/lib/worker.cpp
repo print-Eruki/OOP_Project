@@ -7,8 +7,13 @@ class Worker : public Person  //inherited all the members and methods from the P
     protected:
     float salary;
     float weekly_hours;
+    static int count;
 
     public:
+    Worker()
+    {
+        count++;
+    }
     virtual void setdata(string fname, string lname, string g, int a, float h, float w, float s, float weekhours)
     {
         first_name = fname;
@@ -18,6 +23,7 @@ class Worker : public Person  //inherited all the members and methods from the P
         height = h;
         salary = s;
         weekly_hours = weekhours; 
+        
     } 
     virtual void displaydata()
     {
@@ -33,4 +39,9 @@ class Worker : public Person  //inherited all the members and methods from the P
         cout<<"Hello! I am "<<first_name<<" "<<last_name<<", I am a worker that works "
         <<weekly_hours<<" hours a week and I have a salary of "<<salary<<"."<<endl;
     }
+    static int worktotal(void)
+    {
+        return count;
+    }
+    
 };

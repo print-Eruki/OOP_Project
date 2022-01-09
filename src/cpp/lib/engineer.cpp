@@ -10,8 +10,13 @@ class Engineer : public Worker
     string company;
     bool masters;
     bool doctorate;
+    static int count;
 
     public:
+    Engineer()
+    {
+        count++;
+    }
     void setdata(string fname, string lname, string g, int a, float h, float w, float s, float weekhours, string t,
     string c, bool m, bool d)
     {
@@ -46,5 +51,9 @@ class Engineer : public Worker
         {
             cout<<"I have a doctorate degree!"<<endl;
         }
+    }
+    static int engtotal()
+    {
+        return count++;
     }
 };
