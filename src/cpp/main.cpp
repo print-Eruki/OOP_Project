@@ -25,18 +25,22 @@ int main (void)
     Engineer Roberto;
     Student Isabela;
 
+    //Input the data all set it up using the setdata function
     Ale.setdata("Ale","Pagan", "Male",20,177.8, 180, 15.30,35,"DLA Piper");
     Michael.setdata("Michael","Gonzales", "Male",22,177.8, 110, 7.25,40);
     Jorge.setdata("Jorge","Perez","Male", 20, 177.8, 160, 12, 60,"Surgeon");
     Roberto.setdata("Roberto","Santana","Male", 27, 180, 140, 22.2,54,"Software","Google",true,true);
     Isabela.setdata("Isabela","Velez","Female", 18, 150.4, 111, "UPRM","Electrical Engineering");
 
+    //output all the counters in all the classes.
     cout<<"Objects created: "<<Person::objtotal()<<endl;
     cout<<"Workers created: "<<Worker::worktotal()<<endl;
     cout<<"Lawyers created: "<<Lawyer::lawtotal()<<endl;
     cout<<"Engineers created: "<<Engineer::engtotal()<<endl;
     cout<<"Doctors created: "<<Doctor::doctotal()<<endl;
     cout<<"Students created: "<<Student::studtotal()<<endl;
+
+    //Show data using the talk functon
     Ale.talk();
     Michael.talk();
     Jorge.talk();
