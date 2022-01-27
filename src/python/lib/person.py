@@ -1,10 +1,8 @@
 from dataclasses import dataclass, field
 from abc import ABC, abstractmethod
 
-@dataclass()
+@dataclass
 class Person():
-    
-    count = 0
 
     first_name: str
     last_name: str
@@ -12,7 +10,12 @@ class Person():
     age: int
     height: float
     weight: float
+    count: int = field(init = False)
     
+
+    def __post_init__(self):
+        self.count += 1 
+
     def displaydata(self):
 
         
@@ -29,11 +32,6 @@ class Person():
     def talk(self):
         
         pass
-
-    @staticmethod
-    def increment(self):
-        self.count += 1
-
-    @staticmethod 
-    def counter(self):
+    
+    def Objtotal(self):
         return self.count
