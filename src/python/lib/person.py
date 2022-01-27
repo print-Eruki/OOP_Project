@@ -4,6 +4,7 @@ from abc import ABC, abstractmethod
 @dataclass()
 class Person():
     
+    count = 0
 
     first_name: str
     last_name: str
@@ -11,12 +12,6 @@ class Person():
     age: int
     height: float
     weight: float
-    count: int = field(init = False)
-
-    def __post_init__(self):
-        self.count =+ 1
-
-
     
     def displaydata(self):
 
@@ -28,13 +23,17 @@ class Person():
         print(self.height)
         print(self.weight)
 
-
-    def objtotal(self):
-        return self.count
-
     
     abstractmethod  
 
     def talk(self):
         
         pass
+
+    @staticmethod
+    def increment(self):
+        self.count += 1
+
+    @staticmethod 
+    def counter(self):
+        return self.count

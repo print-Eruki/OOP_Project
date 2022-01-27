@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string> 
+#include <vector>
 #include"lib/worker.cpp"
 #include"lib/lawyer.cpp" //Must add the folder if the main.cpp is not in the same folder
 #include"lib/doctor.cpp"
@@ -16,9 +17,13 @@ int Engineer::count = 0;
 int Lawyer::count = 0;
 int Student::count =0;
 
+//Create a vector to hold any number of grades and calculate the average (student.cpp)
+vector<float> grades;
+
 
 int main (void)
 {
+    int n, input;
     Lawyer Ale;
     Worker Michael;
     Doctor Jorge;
@@ -46,4 +51,17 @@ int main (void)
     Jorge.talk();
     Roberto.talk();
     Isabela.talk();
+
+    //Will receive input and place it inside the grades vector to send to the 
+    //calculate method
+    cout<<"Please enter the number of grades Isabela has receive: ";
+    cin>>n;
+
+    for(int i=0;i<n;i++)
+    {
+        cout<<"Please enter the grade from 0 to 100:";
+        cin>>input;
+        grades.push_back(input);
+    }
+    cout<<"Isabela final grade is: "<<Isabela.calculate(grades)<<"!";
 }

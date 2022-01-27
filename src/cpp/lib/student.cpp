@@ -34,6 +34,17 @@ class Student : public Person
         cout<<"Hello! I am "<<first_name<<" "<<last_name<<". I am a student at "<<institution<<", studying "
         <<major<<"."<<endl;
     }
+    float calculate(vector<float> grades)
+    {
+        float average =0;
+        for(int i=0; i<grades.size();i++)
+        {
+            average += grades[i]; 
+        }
+        average = average/grades.size();
+
+        return average;
+    }
     static int studtotal()
     {
         return count;

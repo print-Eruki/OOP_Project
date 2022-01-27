@@ -1,0 +1,9 @@
+import keyboard, time
+
+time.sleep(5)
+
+for i in range(48):
+    keyboard.write("1")
+    keyboard.press("enter") 
+    
+
