@@ -63,5 +63,5 @@ int main (void)
         cin>>input;
         grades.push_back(input);
     }
-    cout<<"Isabela final grade is: "<<Isabela.calculate(grades)<<"!";
+    cout<<"\nIsabela final grade is: "<<Isabela.calculate(grades)<<"!";
 }
