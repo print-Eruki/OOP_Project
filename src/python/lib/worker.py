@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from lib.person import Person
 
 @dataclass
 class Worker(Person):

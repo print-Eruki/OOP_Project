@@ -11,17 +11,6 @@ class Person:
     height: float
     weight: float
     
- 
-
-    def displaydata(self):
-
-        
-        print(self.first_name)
-        print(self.last_name)
-        print(self.gender)
-        print(self.age)
-        print(self.height)
-        print(self.weight)
 
     
     abstractmethod  
