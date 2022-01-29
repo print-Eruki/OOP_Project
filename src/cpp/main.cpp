@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string> 
 #include <vector>
-#include"lib/worker.cpp"
-#include"lib/lawyer.cpp" //Must add the folder if the main.cpp is not in the same folder
-#include"lib/doctor.cpp"
-#include"lib/engineer.cpp"
-#include"lib/student.cpp"
+#include"include/worker.cpp"
+#include"include/lawyer.cpp" //Must add the folder if the main.cpp is not in the same folder
+#include"include/doctor.cpp"
+#include"include/engineer.cpp"
+#include"include/student.cpp"
 
 using namespace std;
 

@@ -3,6 +3,7 @@ from lib.person import Person
 
 @dataclass
 class Worker(Person):
+    """This class will inherit the member and method from person.py"""
 
     salary: float
     weekly_hours: int
