@@ -16,7 +16,7 @@ class Engineer(Worker):
     def talk(self):
         
 
-        print("Hello! I am " + self.first_name + " " + self.last_name + ", I am a " + self.type + " engineer that works " + str(self.weekly_hours) + " a week at " + self.company + " and I have a salary of " + str(self.salary) +"." )
+        print("Hello! I am {} {}, I am a {} engineer that works {} a week at {} and I have a salary of {}.".format(self.first_name, self.last_name, self.type, self.weekly_hours, self.company, self.salary))
         if(self.has_master == True):
             print("I have a masters degree!")
         

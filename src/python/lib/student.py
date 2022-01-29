@@ -13,7 +13,7 @@ class Student(Person):
     def talk(self):
         
 
-        print("Hello! I am " + self.first_name + " " + self.last_name + ". I am a student at " + self.institution + ", studying " + self.major +".")
+        print("Hello! I am {} {} . I am a student at {}, studying {}.".format(self.first_name, self.last_name, self.institution, self.major))
 
 
     

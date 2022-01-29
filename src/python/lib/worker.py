@@ -9,4 +9,4 @@ class Worker(Person):
 
     def talk(self):
 
-        print("Hello! I am " + self.first_name + " " + self.last_name + ". I am a worker that works " + str(self.weekly_hours) + " a week and I have a salary of " + str(self.salary) + ".")
+        print("Hello! I am {} {}. I am a worker that works {} a week and I have a salary of {}.".format(self.first_name, self.last_name, self.weekly_hours, self.salary))
