@@ -22,4 +22,4 @@ class Student(Person):
 
         self.final_grade = sum(argv)
         self.final_grade /= len(argv)
-        print(self.final_grade)    
+        print("My final grades are: ", self.final_grade)    
