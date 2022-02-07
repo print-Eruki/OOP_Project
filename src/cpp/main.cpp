@@ -30,7 +30,7 @@ int main (void)
     Engineer Roberto;
     Student Isabela;
 
-    //Input the data all set it up using the setdata function
+    //Input the data and set it up using the setdata function
     Ale.setdata("Ale","Pagan", "Male",20,177.8, 180, 15.30,35,"DLA Piper");
     Michael.setdata("Michael","Gonzales", "Male",22,177.8, 110, 7.25,40);
     Jorge.setdata("Jorge","Perez","Male", 20, 177.8, 160, 12, 60,"Surgeon");
