@@ -23,20 +23,15 @@ class Person
         count++;
     }
     //set all the atributes
-    virtual void setdata()
-    {
-        
-    }
-    //Get all the atributes (output them out)
-    virtual void displaydata()
-    {
-        
+    virtual void setdata();
 
-    }
-    virtual void talk()
-    {
-        cout<<"Hello! I am "<<first_name<<" "<<last_name<<". I am a "<<gender<<" and my age is "<<age<<" years old.";
-    }
+
+    //Get all the atributes (output them out)
+    virtual void displaydata();
+
+    virtual void talk();
+
+    
     //Static member function
     static int objtotal(void)
     {
